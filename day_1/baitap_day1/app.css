@@ -1,0 +1,40 @@
+#troll{
+    width: 600px;
+    margin: auto;
+
+}
+#question{
+    background-color: #212121;
+    color:#ffffff;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50;
+    
+}
+.traloi{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font size: 30px;
+    
+}
+
+#yes{
+    background-color: green;
+      
+}
+#no{
+    background-color: hotpink;
+}
+#answer{
+
+}
+.reverse{
+    flex-direction: row-reverse;
+}
