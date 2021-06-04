@@ -28,17 +28,46 @@ class Memecolection {
     name;
     owner;
     memes;
+    constructor(id,name,owner,memes){
+        this.id = id;
+        this.name = name;
+        this.owner = owner;
+        this.memes = memes;
+    }
+    
+    constructor(id,name,owner,memes){
+        this.id = id;
+        this.name = name;
+        this.owner = owner;
+    }
     addmeme(){
+        if(meme instanceof Meme){
+            this.memes.push(meme);
+        }
+        else{
+            console.log("dieu")
+        }
 
     }
-    update(){
-
+    update(id,data){
+        let place = this.fine(id);
+        if(place != -1){
+            this.memes[place].update(data);
+        }
     }
     deletememes(){
-
+        for (let i = 0; i < this.memes.length; i++) {
+            if (id == this.memes[i].id) {
+                this.memes.splice(i, 1);
+            };
+        }
 
     }
     show(){
-
+        console.log(this)
     }
 }
+
+// bài 2 mình chưa biết làm 
+
+
